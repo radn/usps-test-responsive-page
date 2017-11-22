@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: helvetica, arial;
+    font-size: 12px;
+    color: #174573;
+}
+header {
+  background-color: #094d85;
+  height: 85px;
+  width: 100%;
+}
+header div {
+  float: left;
+  width: 50%;
+}
+header div h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 85px;
+  margin: 0 12px;
+}
+header div a {
+  font-size: 0;
+  text-indent: -200000px;
+  height: 60px;
+  width: 60px;
+  background: url('../images/promo.jpg') no-repeat;
+  background-size: cover;
+  float: right;
+  margin: 12px;
+}
+section {
+  width: 100%;
+}
+section p {
+  margin: 25px 15px;
+}
+
+/* This will cover majorty of phones but we can always add more media query style for specific devices */
+@media only screen and (max-width : 480px) {
+  header {
+    min-height: 175px;
+  }
+  header div {
+    width: 100%
+  }
+  header div h1 {
+    text-align: center;
+  } 
+   header div.promo {
+    display: flex;
+   }
+  header div a {
+    min-width: 210px;
+    min-height: 210px;
+    border-radius: 50%;
+    border: 3px solid #062d4f;
+    margin: 0 auto;
+  }
+  section p {
+    display: inline-block;
+  }
+}
